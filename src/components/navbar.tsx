@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../icons/logo.tsx";
 import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
 
@@ -10,10 +9,10 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-primary-200";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
+    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-4 flex justify-between items-center">
       <a href="/">
         {" "}
-        <Logo />
+        <img src="../../public/logo.png" alt="Logo" className="h-24" />
       </a>
 
       {/* Nav List for Desktop */}

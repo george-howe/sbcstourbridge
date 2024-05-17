@@ -1,7 +1,6 @@
 import Facebook from "../icons/facebook.tsx";
 import Instagram from "../icons/instagram.tsx";
 import LinkedIn from "../icons/linkedin.tsx";
-import Logo from "../icons/logo.tsx";
 import Twitter from "../icons/twitter.tsx";
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
         {/* start */}
         <div className="col-span-1 md:col-span-2">
           <a href="/" className="">
-            <Logo />
+            {/* <Logo /> */}
           </a>
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
             It is a long established fact that a reader will be distracted

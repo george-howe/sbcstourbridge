@@ -24,7 +24,7 @@ const { title } = Astro.props as LayoutProps
     <title>{title}</title>
   </head>
   <body>
-    <main class='bg-main bg-no-repeat bg-cover bg-center'>
+    <main class='bg-no-repeat bg-cover bg-center'>
       <Navbar client:load/>
       <slot/>
       <!-- All different pages to be rendered here -->

@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/banner.png')",
-        main: "url('/Background.jpg')",
+        //main: "url('/Background.jpg')",
         about: "url('/aboutpage-bg.png')",
         services: "url('/servicespage-bg.jpg')",
         contact: "url('/contactpage-bg.jpg')",
