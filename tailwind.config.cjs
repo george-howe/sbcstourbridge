@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/banner.png')",
+        hero: "url('/coffee-read.jpg')",
         //main: "url('/Background.jpg')",
         about: "url('/aboutpage-bg.png')",
         services: "url('/servicespage-bg.jpg')",
@@ -15,15 +15,18 @@ module.exports = {
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
-        jost: ["Jost", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
+        mulish: ["Mulish", "sans-serif"],
+        nunito: ["Nunito Sans", "sans-serif"],
       },
       colors: {
         // Configure your color palette here
         primary: {
-          100: "#CDA274",
-          200: "#292F36",
-          300: "#F4F0EC",
-          400: "#E2E2E2",
+          slate: "#364049",
+          clay: "#A29797",
+          sweetPea: "#F4D5D3",
+        },
+        secondary: {
+          brick: "#D25343",
         },
         text: {
           blue: "#1B2534",
