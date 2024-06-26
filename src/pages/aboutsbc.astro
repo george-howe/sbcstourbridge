@@ -1,0 +1,195 @@
+---
+import MainLayout from "../layouts/main-layout.astro"
+import Facebook from "../icons/facebook"
+import Twitter from "../icons/twitter"
+import Instagram from "../icons/instagram"
+
+const localChapters = [
+  {
+    name: 'Enter local chapter name here',
+    logo: '/logo.png',
+    instagram: 'instagram link',
+    facebook: 'facebook link',
+    twitter: 'twitter link'
+  },
+  {
+    name: 'Enter local chapter name here',
+    logo: '/logo.png',
+    instagram: null,
+    facebook: 'facebook link',
+    twitter: 'twitter link'
+  },
+  {
+    name: 'Enter local chapter name here',
+    logo: '/logo.png',
+    instagram: 'instagram link',
+    facebook: 'facebook link',
+    twitter: 'twitter link'
+  },
+  {
+    name: 'Enter local chapter name here',
+    logo: '/logo.png',
+    instagram: 'instagram link',
+    facebook: 'facebook link',
+    twitter: 'twitter link'
+  }
+]
+---
+
+<MainLayout title="About Silent Book Club®">
+  <!-- Banner Section -->
+
+  <section
+    class="w-full bg-primary-slate h-[35vh] lg:h-[50vh] flex justify-center items-end"
+  >
+    <div
+      class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white gap-2.5"
+    >
+      <h1
+        class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200"
+      >
+        About Silent Book Club®
+      </h1>
+      <p
+        class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+      >
+        Welcome to Introvert Happy Hour
+      </p>
+    </div>
+  </section>
+
+  <!-- About SBC -->
+
+  <section
+    class="w-full pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[100px] px-12 lg:px-0 mx-auto bg-white"
+  >
+    <div
+      class="w-full flex flex-col-reverse lg:flex-column justify-between gap-10 items-center lg:max-w-[1200px] mx-auto"
+    >
+      <div class="flex flex-col gap-6">
+        <h2
+          class="text-[30px] text-center lg:text-left font-nunito tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-primary-slate font-bold"
+        >
+          Read with friends
+        </h2>
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          Silent Book Club ® is a global community of readers, with more than
+          1000 chapters in 50 countries around the world led by local
+          volunteers. SBC members gather in public at bars, cafes, bookstores,
+          libraries, and online to read together in quiet camaraderie.
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          Silent Book Club started in San Francisco in 2012 with a couple of
+          friends—Guinevere de la Mare and Laura Gluhanich—reading in
+          companionable silence at our neighborhood bar. We loved books, and
+          reading with friends, but most of our previous attempts at book clubs
+          had fizzled out.
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          Often with traditional book clubs there's the scramble to finish the
+          selected book, and the pressure to have something smart to say.
+          Wouldn't it be great to have a book club where you could just enjoy
+          books, friends, and drinks—without any homework?
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          At Silent Book Club, there's no assigned reading. All readers are
+          welcome—ebooks, audiobooks, textbooks, comic books... it's BYOBook.
+          Our events are free and support local businesses. Friends and
+          strangers gather at a set time and location, order food or drinks,
+          share what they're reading, and settle in for an hour of silent,
+          sustained reading. At the end of the hour, attendees can socialize—or
+          not!
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          We started Silent Book Club because reading with friends enriches our
+          lives and makes us happy. We love hearing about what people are
+          reading (often in their other book clubs) and we think it's important
+          to put down our phones and be social. Real, live,
+          breathing-the-same-air social, not hearting-you-on-Instagram social.
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          Silent Book Club is about community. Everyone is welcome, and anyone
+          can join or launch a chapter. We encourage people all over the world
+          to start their own Silent Book Clubs. All you need is a friend, a
+          comfy public setting, and a book. We have active chapters around the
+          world in cities of all sizes, and new chapters are being launched by
+          volunteers every week.
+        </p>
+
+        <p
+          class="text-base md:text-[22px] lg:max-w-[100%] text-center lg:text-left tracking-tight font-mulish text-primary-slate leading-[33px]"
+        >
+          For more information on Silent Book Club and it's many chapters, go to <a href="https://silentbook.club/" class="underline">silentbook.club.</a>
+        </p>
+      </div>
+      <img
+        src="/FB_Cover_Main.jpg"
+        alt="A group reading"
+        class="lg:h-80"
+      />
+    </div>
+  </section>
+
+  <!-- Local SBC Friends -->
+
+  <!-- <section
+    class="w-full py-[100px] lg:py-[100px] px-12 lg:px-0 mx-auto bg-primary-slate"
+  >
+    <div class="w-full flex flex-col gap-10 lg:max-w-[1200px] mx-auto">
+      <h2
+        class="font-nunito font-bold tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto text-white"
+      >
+        Other Local SBC Chapters
+      </h2>
+      <div class="flex w-full overflow-x-scroll gap-4 flex-row no-scrollbar">
+        { localChapters.map((chapter) => {
+          return (
+            <div
+              class="flex flex-col gap-10 w-full py-[70px] px-7 bg-white min-w-[284px] items-center rounded-[32px]"
+            >
+              <p class="flex flex-col tracking-tight leading-9 text-center">
+                <span class="text-primary-200 text-lg lg:text-[25px] font-nunito">{chapter.name}</span>
+              </p>
+              <img src={chapter.logo} alt={chapter.name + " logo"} class="h-20" />
+              <div class="flex gap-6">
+                {chapter.instagram ? <a href="/"><Instagram /></a> : null}
+                {chapter.facebook ? <a href="/"><Facebook /></a> : null}
+                {chapter.twitter ? <a href="/"><Twitter /></a> : null}
+              </div>
+            </div>
+          )})}}
+      </div>
+    </div>
+  </section> -->
+
+</MainLayout>
+
+<style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>

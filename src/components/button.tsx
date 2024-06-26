@@ -17,12 +17,12 @@ const Button = (props: ButtonProps) => {
   const className = `${defaultStyles} ${bgClass}`;
 
   return (
-    <button className={className} type={type}>
-      <a href={meetupLink} className="hover:underline">
-        {text}
-      </a>
-      {variant === "primary" ? <ArrowSec /> : <ArrowPri />}
-    </button>
+    <a href={meetupLink} className="hover:underline text-white ml-auto">
+      <button className={className} type={type}>
+          {text}
+        {variant === "primary" ? <ArrowSec /> : <ArrowPri />}
+      </button>
+    </a>
   );
 };
 

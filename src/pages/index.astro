@@ -20,35 +20,32 @@ const summaries = [
 		text: 'With more than 1000 chapters in 50 countries, we gather to read in quiet camaraderie.'
 	},
 ]
+// next event
+const sugarLoaf = {
+	summary: 'Why not spend an hour or two surrounded by nature in the peace and quiet with a good book.',
+	img: '/sugarloaf.jpg',
+	alt: 'Allotment field with teepee',
+	location: "Roots Allotments Sugar Loaf Fields"
+}
 
-// const events = [
-// 	{
-// 		img: '',
-// 		name: 'Sugar Loaf Fields',
-// 		location: '21/5/24',
-// 		review: ''
-// 	},
-// 	{
-// 		img: '',
-// 		name: 'TBC',
-// 		location: '',
-// 		review: ''
-// 	},
-// 	{
-// 		img: '',
-// 		name: 'TBC',
-// 		location: '',
-// 		review: ''
-// 	},
-// ]
+const drEamers = {
+	summary: "Come join us for an hour or two reading at Dr Eamers' Distillery Bar!",
+	img: '/genericBar.jpg',
+	alt: 'A woman sitting at a table reading a book while drinking a cocktail',
+	dateTime: 'Thursday 27th June 6.30pm - 8.30pm'
+}
+const nextEvent = drEamers;
+const nextEventMeetupLink = 'https://www.meetup.com/silent-book-club-stourbridge/events/301600581/';
 
+
+// upcoming
 const events = [
 	{
 		announced: true,
-		img: '/sugarloaf.jpg',
-		location: 'Roots Allotments Sugar Loaf Fields',
-		date: '21st May 2024 6.30pm - 8.30pm',
-		link: 'https://www.meetup.com/silent-book-club-stourbridge/events/300350935/',
+		img: sugarLoaf.img,
+		location: sugarLoaf.location,
+		date: '16th July 2024 6.30pm - 8.30pm',
+		link: 'https://www.meetup.com/silent-book-club-stourbridge/events/301642320/',
 		position: 'left'
 	},
 	{
@@ -60,44 +57,6 @@ const events = [
 		position: 'right'
 	}
 ]
-
-// const clientLogos = [
-// 	{
-// 		img: '/clientLogo1.svg',
-// 	},
-// 	{
-// 		img: '/clientLogo2.svg',
-// 	},
-// 	{
-// 		img: '/clientLogo3.svg',
-// 	},
-// 	{
-// 		img: '/clientLogo4.svg',
-// 	},
-// 	{
-// 		img: '/clientLogo5.svg',
-// 	},
-// ]
-
-// const experiences = [
-// 	{
-// 		num: 12,
-// 		text:'Years Of Experiance'
-// 	},
-// 	{
-// 		num: 85,
-// 		text:'Success Project'
-// 	},
-// 	{
-// 		num: 15,
-// 		text:'Active Project'
-// 	},
-// 	{
-// 		num: 95,
-// 		text:'Happy Customers'
-// 	},
-// ]
-
 ---
 
 <MainLayout title = 'Silent Book Club Stourbridge: Home'>
@@ -134,50 +93,15 @@ const events = [
 	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[100px]">
 		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
 			<h2 class="text-[30px] text-center capitalize lg:text-left font-nunito font-bold tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Join us at our next event...</h2>
-			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">As the weather begins to warm up, why not spend an hour or two surrounded by nature in the peace and quiet with a good book.</p>
-			<Button text="RSVP Now" meetupLink="https://www.meetup.com/silent-book-club-stourbridge/events/300350935/"/>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.summary}</p>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.dateTime}</p>
+			<Button text="RSVP Now" meetupLink={nextEventMeetupLink}/>
 		</div>
 
 		<div>
-			<img src="/sugarloaf.jpg" alt="" class="" />
+			<img src={nextEvent.img} alt={nextEvent.alt} class="" />
 		</div>
 	</section>
-
-	<!-- Future Events Section
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-	<div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">Future Events</h2>
-		<div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
-			{
-			events.map((event) => {
-				return (
-					<div class="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
-						<div class="flex flex-col sm:flex-row gap-6 items-center">
-							<img src={event.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{event.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-mulish">{event.location}</span>
-							</p>
-						</div>
-						<p class="font-mulish tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">{event.review}</p>
-					</div>
-			)
-		})
-		}
-		</div>
-	</div>
-	</section> -->
-
-	<!-- Client Logo Section
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
-			{
-				clientLogos.map(logo => <img src={logo.img} alt="" />)
-			}
-		</div>
-	</section> -->
 
 	<!-- Future Events Section -->
 

@@ -2,11 +2,22 @@ import React, { useState } from "react";
 import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
 
+const navItems = [
+  {
+    item: 'About Us',
+    link: '/about'
+  },
+  {
+    item: 'About Silent Book Club',
+    link: '/aboutsbc'
+  }
+]
+
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-xl leading-6 font-mulish text-primary-200 hover:underline";
 
   return (
     <div className="fixed bg-white w-full border-b border-primary-slate">
@@ -18,15 +29,13 @@ const Navbar = () => {
         {/* Nav List for Desktop */}
         {matches && (
           <nav className="flex flex-row gap-6">
-            {/* <a href="/about" className={linkStyle}>
-              About Us
-            </a>
-            <a href="/services" className={linkStyle}>
-              Services
-            </a>
-            <a href="/contact" className={linkStyle}>
-              Contact Us
-            </a> */}
+            { navItems.map((navItem) => {
+              return (
+                  <a href={navItem.link} className={linkStyle}>
+                    {navItem.item}
+                  </a>
+              )
+            })}
           </nav>
         )}
 
@@ -68,15 +77,14 @@ const Navbar = () => {
             <a href="/" className={linkStyle}>
               Home
             </a>
-            {/* <a href="/about" className={linkStyle}>
-              About Us
-            </a>
-            <a href="/services" className={linkStyle}>
-              Services
-            </a>
-            <a href="/contact" className={linkStyle}>
-              Contact Us
-            </a> */}
+
+            { navItems.map((navItem) => {
+              return (
+                  <a href={navItem.link} className={linkStyle}>
+                    {navItem.item}
+                  </a>
+              )
+            })}
           </motion.nav>
         )}
       </div>

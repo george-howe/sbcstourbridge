@@ -17,6 +17,10 @@ const { title } = Astro.props as LayoutProps
 		<meta name="description" content="Silent Book Club Stourbridge" />
     <meta title = {title}/>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">  
@@ -29,7 +33,7 @@ const { title } = Astro.props as LayoutProps
       <!-- All different pages to be rendered here -->
       <Footer />
     </main>
-    <p class="tracking-tight text-base text-left border border-gray-300 bg-white py-4 px-4 lg:text-[10px] lg:leading-[10px] font-mulish text-primary-slate">
+    <p class="tracking-tight text-base text-left border border-gray-300 bg-white py-4 px-4 text-[10px] lg:leading-[10px] font-mulish text-primary-slate">
         <a href="https://www.flaticon.com/free-icons/meetup" title="meetup icons">Meetup icons created by Pixel perfect - Flaticon</a>
     </p>
   </body>

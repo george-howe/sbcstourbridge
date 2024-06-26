@@ -9,7 +9,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/coffee-read.jpg')",
         //main: "url('/Background.jpg')",
-        about: "url('/aboutpage-bg.png')",
+        //about: "url('/bookClub.jpg')",
         services: "url('/servicespage-bg.jpg')",
         contact: "url('/contactpage-bg.jpg')",
       },
