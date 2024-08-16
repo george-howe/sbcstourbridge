@@ -32,21 +32,29 @@ const drEamers = {
 	summary: "Come join us for an hour or two reading at Dr Eamers' Distillery Bar!",
 	img: '/genericBar.jpg',
 	alt: 'A woman sitting at a table reading a book while drinking a cocktail',
-	dateTime: 'Thursday 27th June 6.30pm - 8.30pm'
+	dateTime: 'Thursday 29th August 6.30pm - 8.30pm'
 }
 const nextEvent = drEamers;
-const nextEventMeetupLink = 'https://www.meetup.com/silent-book-club-stourbridge/events/301600581/';
+const nextEventRSVPLink = 'https://www.eventbrite.co.uk/e/august-silent-book-club-tickets-995059639167';
 
 
 // upcoming
 const events = [
+	// {
+	// 	announced: true,
+	// 	img: sugarLoaf.img,
+	// 	location: sugarLoaf.location,
+	// 	date: '16th July 2024 6.30pm - 8.30pm',
+	// 	link: 'https://www.meetup.com/silent-book-club-stourbridge/events/301642320/',
+	// 	position: 'left'
+	// },
 	{
-		announced: true,
-		img: sugarLoaf.img,
-		location: sugarLoaf.location,
-		date: '16th July 2024 6.30pm - 8.30pm',
-		link: 'https://www.meetup.com/silent-book-club-stourbridge/events/301642320/',
-		position: 'left'
+		announced: false,
+		img: '/bookshop.jpg',
+		location: 'To Be Announced',
+		date: '',
+		link: '',
+		position: 'right'
 	},
 	{
 		announced: false,
@@ -95,7 +103,7 @@ const events = [
 			<h2 class="text-[30px] text-center capitalize lg:text-left font-nunito font-bold tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Join us at our next event...</h2>
 			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.summary}</p>
 			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.dateTime}</p>
-			<Button text="RSVP Now" meetupLink={nextEventMeetupLink}/>
+			<Button text="RSVP Now" rsvpLink={nextEventRSVPLink}/>
 		</div>
 
 		<div>
@@ -119,7 +127,7 @@ const events = [
 									<span class="text-primary-slate text-lg lg:text-[25px] font-nunito font-bold">{event.location}</span>
 									<span class="text-primary-clay text-base lg:text-lg font-mulish">{event.date}</span>
 								</p>
-								{event.announced ? <Button text="RSVP Now" meetupLink={event.link}/> : null}
+								{event.announced ? <Button text="RSVP Now" rsvpLink={event.link}/> : null}
 						</div>
 				)
 			})

@@ -19,14 +19,11 @@ const Footer = () => {
           </h5>
           <div className="flex md:flex-row-reverse gap-6">
             <div className="flex gap-5">
-              {/* <a href="/">
-                <Facebook />
-              </a> */}
               <a href="https://www.instagram.com/sbcstourbridge/">
                 <Instagram />
               </a>
-              <a href="https://www.meetup.com/silent-book-club-stourbridge/">
-                <img src="/meetup.svg" alt="" className="w-[18px]"/>
+              <a href="https://www.facebook.com/groups/2025872474496394/">
+                <Facebook />
               </a>
               <a href="mailto:silentbookclubstourbridge@gmail.com">
                 <Mail />
