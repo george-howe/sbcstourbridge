@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="fixed bg-white w-full border-b border-primary-slate">
       <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-4 flex justify-between items-center" >
         <a href="/">
-          <img src="/logo.png" alt="Logo" className="h-16 inline-block" />
+          <img src="/logo.jpg" alt="Logo" className="h-16 inline-block" />
         </a>
 
         {/* Nav List for Desktop */}
