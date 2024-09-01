@@ -25,9 +25,6 @@ const Footer = () => {
               <a href="https://www.facebook.com/groups/2025872474496394/">
                 <Facebook />
               </a>
-              <a href="mailto:silentbookclubstourbridge@gmail.com">
-                <Mail />
-              </a>
             </div>
           </div>
         </div>

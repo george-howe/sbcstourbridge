@@ -34,27 +34,27 @@ const drEamers = {
 	alt: 'A woman sitting at a table reading a book while drinking a cocktail',
 	dateTime: 'Thursday 29th August 6.30pm - 8.30pm'
 }
-const nextEvent = drEamers;
-const nextEventRSVPLink = 'https://www.eventbrite.co.uk/e/august-silent-book-club-tickets-995059639167';
+
+const soffio = {
+	summary: 'Come join us for Tapas Tuesday and an hour of reading at Soffio Lounge!',
+	img: '/genericBar.jpg',
+	alt: 'A woman sitting at a table reading a book while drinking a cocktail',
+	dateTime: 'Tuesday 10th September 6.30pm - 8.30pm'
+}
+
+const nextEvent = soffio;
+const nextEventRSVPLink = 'https://www.eventbrite.co.uk/e/september-silent-book-club-soffio-lounge-tickets-1005803985797';
 
 
 // upcoming
 const events = [
-	// {
-	// 	announced: true,
-	// 	img: sugarLoaf.img,
-	// 	location: sugarLoaf.location,
-	// 	date: '16th July 2024 6.30pm - 8.30pm',
-	// 	link: 'https://www.meetup.com/silent-book-club-stourbridge/events/301642320/',
-	// 	position: 'left'
-	// },
 	{
-		announced: false,
-		img: '/bookshop.jpg',
-		location: 'To Be Announced',
-		date: '',
-		link: '',
-		position: 'right'
+		announced: true,
+		img: drEamers.img,
+		location: "Dr Eamers' Distillery Bar",
+		date: 'Thursday 26th Sept 6.30pm - 8.30pm',
+		link: 'https://www.eventbrite.co.uk/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1005807867407',
+		position: 'left'
 	},
 	{
 		announced: false,
@@ -63,11 +63,19 @@ const events = [
 		date: '',
 		link: '',
 		position: 'right'
-	}
+	},
+	// {
+	// 	announced: false,
+	// 	img: '/bookshop.jpg',
+	// 	location: 'To Be Announced',
+	// 	date: '',
+	// 	link: '',
+	// 	position: 'right'
+	// }
 ]
 ---
 
-<MainLayout title = 'Silent Book Club Stourbridge: Home'>
+<MainLayout title = 'Silent Book Club Stourbridge'>
 
 	<!-- Banner -->
 	
