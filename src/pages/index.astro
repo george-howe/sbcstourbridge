@@ -95,7 +95,7 @@ const events = [
 				summaries.map((summary) => {
 					return (
 						<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
-							<h3 class="text-white font-nunito font-bold text-[22px] md:text-[25px] leading-loose">{summary.title}</h3>
+							<h3 class="text-white font-nunito font-bold text-[22px] md:text-[25px] leading-loose text-center">{summary.title}</h3>
 							<p class="text-primary-clay md:text-[22px] tracking-tight font-mulish leading-[33px] text-center"> {summary.text}</p>
 						</div>
 					)
@@ -106,7 +106,7 @@ const events = [
 
 	<!-- Next Event Section -->
 
-	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[100px]">
+	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[100px]">
 		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
 			<h2 class="text-[30px] text-center capitalize lg:text-left font-nunito font-bold tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Join us at our next event...</h2>
 			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.summary}</p>
@@ -129,7 +129,7 @@ const events = [
 				{
 				events.map((event) => {
 					return (
-						<div class="w-full flex flex-col gap-4 bg-white p-14 rounded-[18px]">
+						<div class="w-full flex flex-col gap-4 bg-white p-8 rounded-[18px]">
 						<img src={event.img} alt="" class="lg:h-80"/>
 								<p class="flex flex-col tracking-tight leading-9">
 									<span class="text-primary-slate text-lg lg:text-[25px] font-nunito font-bold">{event.location}</span>
