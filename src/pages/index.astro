@@ -44,17 +44,15 @@ const soffio = {
 }
 
 const tbc = { 
-	summary: 'Unfortunately we have no events lined up at the moment, but we will do soon so stay tuned!',
-	img: '/genericBar.jpg',
-	alt: 'A woman sitting at a table reading a book while drinking a cocktail',
+	summary: "That's it for this year! We'll be spending December resting, working on our TBRs, and making plans for 2025! Keep your eyes peeled for updates...",
+	img: '/xmas.jpg',
+	alt: 'A book surrounded by Christmas lights',
 	dateTime: ''
 }
 
-// we need a christmas one
 
-
-const nextEvent = drEamers;
-const nextEventRSVPLink = 'https://www.eventbrite.co.uk/e/november-silent-book-club-dr-eamers-distillery-bar-tickets-1060273810509';
+const nextEvent = tbc;
+const nextEventRSVPLink = '';
 
 
 // upcoming
@@ -122,7 +120,7 @@ const events = [
 			<h2 class="text-[30px] text-center capitalize lg:text-left font-nunito font-bold tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Join us at our next event...</h2>
 			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.summary}</p>
 			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-mulish text-text-gray leading-[33px]">{nextEvent.dateTime}</p>
-			<Button text="RSVP Now" rsvpLink={nextEventRSVPLink}/>
+			<!-- <Button text="RSVP Now" rsvpLink={nextEventRSVPLink}/> -->
 		</div>
 
 		<div>
@@ -132,7 +130,7 @@ const events = [
 
 	<!-- Future Events Section -->
 
-	<section class="bg-primary-slate">
+	<!-- <section class="bg-primary-slate">
 		<div class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[50px] pb-[50px] lg:pt-[100px] lg:pb-[100px]">
 			<h2 class="font-nunito font-bold tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto text-white">...And Our Future Events</h2>
 			<p class="md:text-[22px] text-center tracking-tight font-mulishleading-[33px] lg:max-w-[60%] mx-auto text-primary-clay">Here's what we've got lined up.</p>
@@ -153,7 +151,7 @@ const events = [
 			}
 			</div>
 		</div>
-	</section>
+	</section> -->
 </MainLayout>
  
 
