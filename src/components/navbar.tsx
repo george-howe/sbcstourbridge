@@ -31,7 +31,7 @@ const Navbar = () => {
           <nav className="flex flex-row gap-6">
             { navItems.map((navItem) => {
               return (
-                  <a href={navItem.link} className={linkStyle}>
+                  <a key={navItem.link} href={navItem.link} className={linkStyle}>
                     {navItem.item}
                   </a>
               )
@@ -80,7 +80,7 @@ const Navbar = () => {
 
             { navItems.map((navItem) => {
               return (
-                  <a href={navItem.link} className={linkStyle}>
+                  <a key={navItem.link} href={navItem.link} className={linkStyle}>
                     {navItem.item}
                   </a>
               )

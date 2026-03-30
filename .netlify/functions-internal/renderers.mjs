@@ -1,31 +1,9 @@
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/server';
 
-/**
- * Astro passes `children` as a string of HTML, so we need
- * a wrapper `div` to render that content as VNodes.
- *
- * As a bonus, we can signal to React that this subtree is
- * entirely static and will never change via `shouldComponentUpdate`.
- */
-const StaticHtml = ({ value, name, hydrate = true }) => {
-	if (!value) return null;
-	const tagName = hydrate ? 'astro-slot' : 'astro-static-slot';
-	return createElement(tagName, {
-		name,
-		suppressHydrationWarning: true,
-		dangerouslySetInnerHTML: { __html: value },
-	});
-};
-
-/**
- * This tells React to opt-out of re-rendering this subtree,
- * In addition to being a performance optimization,
- * this also allows other frameworks to attach to `children`.
- *
- * See https://preactjs.com/guide/v8/external-dom-mutations
- */
-StaticHtml.shouldComponentUpdate = () => false;
+const opts = {
+						experimentalReactChildren: false
+					};
 
 const contexts = new WeakMap();
 
@@ -52,9 +30,31 @@ function incrementId(rendererContextResult) {
 	return id;
 }
 
-const opts = {
-						experimentalReactChildren: false
-					};
+/**
+ * Astro passes `children` as a string of HTML, so we need
+ * a wrapper `div` to render that content as VNodes.
+ *
+ * As a bonus, we can signal to React that this subtree is
+ * entirely static and will never change via `shouldComponentUpdate`.
+ */
+const StaticHtml = ({ value, name, hydrate = true }) => {
+	if (!value) return null;
+	const tagName = hydrate ? 'astro-slot' : 'astro-static-slot';
+	return createElement(tagName, {
+		name,
+		suppressHydrationWarning: true,
+		dangerouslySetInnerHTML: { __html: value },
+	});
+};
+
+/**
+ * This tells React to opt-out of re-rendering this subtree,
+ * In addition to being a performance optimization,
+ * this also allows other frameworks to attach to `children`.
+ *
+ * See https://preactjs.com/guide/v8/external-dom-mutations
+ */
+StaticHtml.shouldComponentUpdate = () => false;
 
 const slotName = (str) => str.trim().replace(/[-_]([a-z])/g, (_, w) => w.toUpperCase());
 const reactTypeof = Symbol.for('react.element');
@@ -74,6 +74,11 @@ async function check(Component, props, children) {
 		return Component['$$typeof'].toString().slice('Symbol('.length).startsWith('react');
 	}
 	if (typeof Component !== 'function') return false;
+	if (Component.name === 'QwikComponent') return false;
+
+	// Preact forwarded-ref components can be functions, which React does not support
+	if (typeof Component === 'function' && Component['$$typeof'] === Symbol.for('react.forward_ref'))
+		return false;
 
 	if (Component.prototype != null && typeof Component.prototype.render === 'function') {
 		return React.Component.isPrototypeOf(Component) || React.PureComponent.isPrototypeOf(Component);
@@ -105,7 +110,7 @@ async function check(Component, props, children) {
 }
 
 async function getNodeWritable() {
-	let nodeStreamBuiltinModuleName = 'stream';
+	let nodeStreamBuiltinModuleName = 'node:stream';
 	let { Writable } = await import(/* @vite-ignore */ nodeStreamBuiltinModuleName);
 	return Writable;
 }
@@ -139,7 +144,8 @@ async function renderToStaticMarkup(Component, props, { default: children, ...sl
 	};
 	const newChildren = children ?? props.children;
 	if (children && opts.experimentalReactChildren) {
-		const convert = await import('./chunks/vnode-children_3769332a.mjs').then((mod) => mod.default);
+		attrs['data-react-children'] = true;
+		const convert = await import('./chunks/vnode-children_c120ba3e.mjs').then((mod) => mod.default);
 		newProps.children = convert(children);
 	} else if (newChildren != null) {
 		newProps.children = React.createElement(StaticHtml, {
@@ -152,18 +158,10 @@ async function renderToStaticMarkup(Component, props, { default: children, ...sl
 		identifierPrefix: prefix,
 	};
 	let html;
-	if (metadata?.hydrate) {
-		if ('renderToReadableStream' in ReactDOM) {
-			html = await renderToReadableStreamAsync(vnode, renderOptions);
-		} else {
-			html = await renderToPipeableStreamAsync(vnode, renderOptions);
-		}
+	if ('renderToReadableStream' in ReactDOM) {
+		html = await renderToReadableStreamAsync(vnode, renderOptions);
 	} else {
-		if ('renderToReadableStream' in ReactDOM) {
-			html = await renderToReadableStreamAsync(vnode, renderOptions);
-		} else {
-			html = await renderToStaticNodeStreamAsync(vnode, renderOptions);
-		}
+		html = await renderToPipeableStreamAsync(vnode, renderOptions);
 	}
 	return { html, attrs };
 }
@@ -193,28 +191,6 @@ async function renderToPipeableStreamAsync(vnode, options) {
 				);
 			},
 		});
-	});
-}
-
-async function renderToStaticNodeStreamAsync(vnode, options) {
-	const Writable = await getNodeWritable();
-	let html = '';
-	return new Promise((resolve, reject) => {
-		let stream = ReactDOM.renderToStaticNodeStream(vnode, options);
-		stream.on('error', (err) => {
-			reject(err);
-		});
-		stream.pipe(
-			new Writable({
-				write(chunk, _encoding, callback) {
-					html += chunk.toString('utf-8');
-					callback();
-				},
-				destroy() {
-					resolve(html);
-				},
-			})
-		);
 	});
 }
 

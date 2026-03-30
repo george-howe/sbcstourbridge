@@ -15,13 +15,17 @@ const Button = (props: ButtonProps) => {
     "ml-auto rounded-[18px] flex capitalize items-center justify-center gap-[9px] w-fit text-white text-base lg:text-lg font-semibold font-nunito leading-snug tracking-tight px-10 py-5 md:px-[54px] md:py-[26px]";
   const bgClass = variant === "primary" ? "bg-primary-slate" : "bg-primary-100";
   const className = `${defaultStyles} ${bgClass}`;
+  const isExternalLink = rsvpLink.startsWith("http://") || rsvpLink.startsWith("https://");
 
   return (
-    <a href={rsvpLink} className="hover:underline text-white ml-auto">
-      <button className={className} type={type}>
-          {text}
-        {variant === "primary" ? <ArrowSec /> : <ArrowPri />}
-      </button>
+    <a
+      href={rsvpLink}
+      className={`${className} hover:underline`}
+      target={isExternalLink ? "_blank" : undefined}
+      rel={isExternalLink ? "noopener noreferrer" : undefined}
+    >
+      {text}
+      {variant === "primary" ? <ArrowSec /> : <ArrowPri />}
     </a>
   );
 };
