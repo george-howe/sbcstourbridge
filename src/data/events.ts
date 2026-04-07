@@ -68,27 +68,18 @@ export const tbc: EventDetails = {
 };
 
 export const special: EventDetails = {
-  summary: "Join us for an hour or two of quiet reading at The Waggon and Horses.",
+  summary: "Join us for a trial meet at The Waggon and Horses!",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
   dateTime: "Tues 14th April - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = hopvault;
+export const nextEvent = special;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/april-silent-book-club-the-hop-vault-tickets-1985152587829?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/april-silent-book-club-the-waggon-and-horses-tickets-1985156056203?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  {
-    announced: true,
-    img: special.img,
-    location: "The Waggon and Horses, Worcester St",
-    date: "Tues 14th Apr - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/april-silent-book-club-the-waggon-and-horses-tickets-1985156056203?aff=oddtdtcreator",
-    position: "right",
-    alt: "The Waggon and Horses pub exterior",
-  },
   {
     announced: true,
     img: drEamers.img,
@@ -98,13 +89,13 @@ export const upcomingEvents: UpcomingEvent[] = [
     position: "right",
     alt: "Dr Eamers' bar exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Thurs 30th April - Subject to change",
-  //   link: "",
-  //   position: "left",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Tues 5th May - Subject to change",
+    link: "",
+    position: "left",
+    alt: "Books arranged on shelves in a bookshop",
+  },
 ];
