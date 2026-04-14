@@ -74,28 +74,28 @@ export const special: EventDetails = {
   dateTime: "Tues 14th April - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = special;
+export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/april-silent-book-club-the-waggon-and-horses-tickets-1985156056203?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/april-silent-book-club-dr-eamers-distillery-bar-tickets-1986311000673?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 30th Apr - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/april-silent-book-club-dr-eamers-distillery-bar-tickets-1986311000673?aff=oddtdtcreator",
-    position: "right",
-    alt: "Dr Eamers' bar exterior",
-  },
+  // {
+  //   announced: true,
+  //   img: drEamers.img,
+  //   location: "Dr Eamers' Distillery Bar",
+  //   date: "Thurs 30th Apr - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/april-silent-book-club-dr-eamers-distillery-bar-tickets-1986311000673?aff=oddtdtcreator",
+  //   position: "right",
+  //   alt: "Dr Eamers' bar exterior",
+  // },
   {
     announced: true,
     img: hopvault.img,
     location: "The Hop Vault",
     date: "Tues 5th May - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Hop Vault exterior",
   },
   // {
