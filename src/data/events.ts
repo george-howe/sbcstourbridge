@@ -68,7 +68,7 @@ export const tbc: EventDetails = {
 };
 
 export const special: EventDetails = {
-  summary: "Join us for a trial meet at The Waggon and Horses!",
+  summary: "Bring a book, grab a drink, and enjoy an hour of peaceful reading with fellow book lovers at The Waggon and Horses.",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
   dateTime: "Tues 14th April - 6.30pm - 8.30pm",
@@ -98,13 +98,22 @@ export const upcomingEvents: UpcomingEvent[] = [
     position: "left",
     alt: "The Hop Vault exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Tues 5th May - Subject to change",
-  //   link: "",
-  //   position: "left",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: true,
+    img: special.img,
+    location: "The Waggon and Horses, Worcester St",
+    date: "Tues 12th May - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/may-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1987834504514?aff=oddtdtcreator",
+    position: "right",
+    alt: "The Waggons and Horses exterior",
+  },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Thurs 21st May - Subject to change",
+    link: "",
+    position: "left",
+    alt: "Books arranged on shelves in a bookshop",
+  },
 ];
