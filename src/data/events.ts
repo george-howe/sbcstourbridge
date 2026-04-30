@@ -77,7 +77,7 @@ export const special: EventDetails = {
 export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/april-silent-book-club-dr-eamers-distillery-bar-tickets-1986311000673?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   // {
@@ -85,26 +85,26 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   img: drEamers.img,
   //   location: "Dr Eamers' Distillery Bar",
   //   date: "Thurs 30th Apr - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/april-silent-book-club-dr-eamers-distillery-bar-tickets-1986311000673?aff=oddtdtcreator",
+  //   link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
   //   position: "right",
   //   alt: "Dr Eamers' bar exterior",
   // },
-  {
-    announced: true,
-    img: hopvault.img,
-    location: "The Hop Vault",
-    date: "Tues 5th May - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Hop Vault exterior",
-  },
+  // {
+  //   announced: true,
+  //   img: hopvault.img,
+  //   location: "The Hop Vault",
+  //   date: "Tues 5th May - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Hop Vault exterior",
+  // },
   {
     announced: true,
     img: special.img,
     location: "The Waggon and Horses, Worcester St",
     date: "Tues 12th May - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/may-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1987834504514?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Waggons and Horses exterior",
   },
   {
@@ -113,7 +113,7 @@ export const upcomingEvents: UpcomingEvent[] = [
     location: "TBC",
     date: "Thurs 21st May - Subject to change",
     link: "",
-    position: "left",
+    position: "right",
     alt: "Books arranged on shelves in a bookshop",
   },
 ];
