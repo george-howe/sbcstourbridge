@@ -45,7 +45,9 @@ export const sugarLoaf: EventDetails = {
 
 export const drEamers: EventDetails = {
   summary:
-    "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
+    "Come celebrate our 2nd birthday with us at Dr Eamers' Distillery Bar!",
+    // summary:
+    // "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
   img: "/dreamers.jpg",
   alt: "Dr Eamers entrance",
   dateTime: "Thursday 30th April - 6.30pm - 8.30pm",
@@ -67,28 +69,19 @@ export const tbc: EventDetails = {
   dateTime: "",
 };
 
-export const special: EventDetails = {
+export const waggon: EventDetails = {
   summary: "Bring a book, grab a drink, and enjoy an hour of peaceful reading with fellow book lovers at The Waggon and Horses.",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
   dateTime: "Tues 14th April - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = drEamers;
+export const nextEvent = hopvault;
 
 export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  // {
-  //   announced: true,
-  //   img: drEamers.img,
-  //   location: "Dr Eamers' Distillery Bar",
-  //   date: "Thurs 30th Apr - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
-  //   position: "right",
-  //   alt: "Dr Eamers' bar exterior",
-  // },
   // {
   //   announced: true,
   //   img: hopvault.img,
@@ -100,20 +93,29 @@ export const upcomingEvents: UpcomingEvent[] = [
   // },
   {
     announced: true,
-    img: special.img,
+    img: waggon.img,
     location: "The Waggon and Horses, Worcester St",
     date: "Tues 12th May - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/may-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1987834504514?aff=oddtdtcreator",
     position: "left",
     alt: "The Waggons and Horses exterior",
   },
-  {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Thurs 21st May - Subject to change",
-    link: "",
+    {
+    announced: true,
+    img: drEamers.img,
+    location: "Dr Eamers' Distillery Bar",
+    date: "Thurs 21st May - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/may-silent-book-club-birthday-edition-dr-eamers-distillery-bar-tickets-1988623267726?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "Dr Eamers' bar exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Thurs 21st May - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
 ];
