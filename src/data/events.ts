@@ -76,21 +76,21 @@ export const waggon: EventDetails = {
   dateTime: "Tues 12th May - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = waggon;
+export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/may-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1987834504514?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/may-silent-book-club-birthday-edition-dr-eamers-distillery-bar-tickets-1988623267726?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  // {
-  //   announced: true,
-  //   img: hopvault.img,
-  //   location: "The Hop Vault",
-  //   date: "Tues 5th May - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/may-silent-book-club-the-hop-vault-tickets-1987130015368?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Hop Vault exterior",
-  // },
+  {
+    announced: true,
+    img: hopvault.img,
+    location: "The Hop Vault",
+    date: "Tues 2nd June - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/june-silent-book-club-the-hop-vault-tickets-1989007334480?aff=oddtdtcreator",
+    position: "left",
+    alt: "The Hop Vault exterior",
+  },
   // {
   //   announced: true,
   //   img: waggon.img,
@@ -100,20 +100,20 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "The Waggons and Horses exterior",
   // },
-    {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 21st May - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/may-silent-book-club-birthday-edition-dr-eamers-distillery-bar-tickets-1988623267726?aff=oddtdtcreator",
-    position: "right",
-    alt: "Dr Eamers' bar exterior",
-  },
+  //   {
+  //   announced: true,
+  //   img: drEamers.img,
+  //   location: "Dr Eamers' Distillery Bar",
+  //   date: "Thurs 21st May - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/may-silent-book-club-birthday-edition-dr-eamers-distillery-bar-tickets-1988623267726?aff=oddtdtcreator",
+  //   position: "right",
+  //   alt: "Dr Eamers' bar exterior",
+  // },
   {
     announced: false,
     img: "/bookshop.jpg",
     location: "TBC",
-    date: "Tues 2nd June - Subject to change",
+    date: "Tues 9th June - Subject to change",
     link: "",
     position: "right",
     alt: "Books arranged on shelves in a bookshop",
