@@ -3,92 +3,94 @@ import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
 
 const navItems = [
-  {
-    item: 'About Us',
-    link: '/about'
-  },
-  {
-    item: 'About Silent Book Club',
-    link: '/aboutsbc'
-  }
-]
+  { item: "About Us", link: "/about" },
+  { item: "About Silent Book Club", link: "/aboutsbc" },
+  // { item: "SBC Fave Books", link: "/sbcfavebooks" },
+];
+
+const navLinkClass =
+  "text-xl leading-[1.5] font-mulish text-primary-slate hover:underline focus-ring rounded-sm";
 
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
-
-  const linkStyle = "text-xl leading-6 font-mulish text-primary-200 hover:underline";
+  const mobileMenuId = "mobile-nav-menu";
 
   return (
-    <div className="fixed bg-white w-full border-b border-primary-slate">
-      <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-4 flex justify-between items-center" >
-        <a href="/">
-          <img src="/logo.jpg" alt="Logo" className="h-16 inline-block" />
+    <header className="fixed bg-white w-full border-b border-primary-slate z-50">
+      <div className="page-container page-section-x w-full py-4 flex justify-between items-center">
+        <a href="/" className="focus-ring rounded-sm" aria-label="Silent Book Club Stourbridge home">
+          <img src="/logo.jpg" alt="" className="h-16 inline-block" role="presentation" />
         </a>
 
-        {/* Nav List for Desktop */}
-        {matches && (
-          <nav className="flex flex-row gap-6">
-            { navItems.map((navItem) => {
-              return (
-                  <a key={navItem.link} href={navItem.link} className={linkStyle}>
-                    {navItem.item}
-                  </a>
-              )
-            })}
+        {matches ? (
+          <nav aria-label="Main navigation" className="flex flex-row gap-6">
+            {navItems.map((navItem) => (
+              <a key={navItem.link} href={navItem.link} className={navLinkClass}>
+                {navItem.item}
+              </a>
+            ))}
           </nav>
-        )}
-
-        {!matches && (
-          <div
+        ) : (
+          <button
+            type="button"
             onClick={() => setToggled(!toggled)}
-            className="space-y-1 cursor-pointer"
+            className="space-y-1 cursor-pointer p-2 focus-ring rounded-sm"
+            aria-expanded={toggled}
+            aria-controls={mobileMenuId}
+            aria-label={toggled ? "Close menu" : "Open menu"}
           >
             <motion.span
               animate={{
                 rotateZ: toggled ? 45 : 0,
                 y: toggled ? 6 : 0,
-                width: toggled ? 20: 20 
+                width: 20,
               }}
               className="block h-0.5 bg-primary-slate"
-            ></motion.span>
-            <motion.span
-              animate={{ rotateZ: toggled ? -45 : 0,
-                y: toggled ? 0 : 0,
-                width: toggled ? 20 : 20, }}
-              className="block h-0.5 bg-primary-slate"
-            ></motion.span>
+              aria-hidden="true"
+            />
             <motion.span
               animate={{
-                
-                width: toggled ? 0 : 20,
+                rotateZ: toggled ? -45 : 0,
+                y: toggled ? 0 : 0,
+                width: 20,
               }}
               className="block h-0.5 bg-primary-slate"
-            ></motion.span>
-          </div>
+              aria-hidden="true"
+            />
+            <motion.span
+              animate={{ width: toggled ? 0 : 20 }}
+              className="block h-0.5 bg-primary-slate"
+              aria-hidden="true"
+            />
+          </button>
         )}
 
         {toggled && !matches && (
           <motion.nav
+            id={mobileMenuId}
             initial={{ opacity: 0, x: 25 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
+            aria-label="Main navigation"
+            className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] bottom-0 left-0 gap-6 items-center justify-center pt-20"
           >
-            <a href="/" className={linkStyle}>
+            <a href="/" className={navLinkClass} onClick={() => setToggled(false)}>
               Home
             </a>
-
-            { navItems.map((navItem) => {
-              return (
-                  <a key={navItem.link} href={navItem.link} className={linkStyle}>
-                    {navItem.item}
-                  </a>
-              )
-            })}
+            {navItems.map((navItem) => (
+              <a
+                key={navItem.link}
+                href={navItem.link}
+                className={navLinkClass}
+                onClick={() => setToggled(false)}
+              >
+                {navItem.item}
+              </a>
+            ))}
           </motion.nav>
         )}
       </div>
-    </div>
+    </header>
   );
 };
 

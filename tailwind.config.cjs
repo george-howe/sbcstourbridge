@@ -24,6 +24,8 @@ module.exports = {
           slate: "#364049",
           clay: "#A29797",
           sweetPea: "#F4D5D3",
+          200: "#364049",
+          100: "#4D5A66",
         },
         secondary: {
           brick: "#D25343",
@@ -39,7 +41,15 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities, addComponents }) {
+      addComponents({
+        ".focus-ring": {
+          "&:focus-visible": {
+            outline: "2px solid #364049",
+            "outline-offset": "2px",
+          },
+        },
+      });
       addUtilities({
         ".center": {
           display: "flex",
@@ -54,6 +64,36 @@ module.exports = {
           display: "flex",
           "justify-content": "space-between",
           "align-items": "center",
+        },
+        ".page-section-x": {
+          "padding-left": "1.5rem",
+          "padding-right": "1.5rem",
+          "@screen sm": {
+            "padding-left": "2.5rem",
+            "padding-right": "2.5rem",
+          },
+          "@screen md": {
+            "padding-left": "3rem",
+            "padding-right": "3rem",
+          },
+          "@screen lg": {
+            "padding-left": "4rem",
+            "padding-right": "4rem",
+          },
+        },
+        ".page-container": {
+          width: "100%",
+          "max-width": "1200px",
+          "margin-left": "auto",
+          "margin-right": "auto",
+        },
+        ".page-section-y": {
+          "padding-top": "50px",
+          "padding-bottom": "50px",
+          "@screen lg": {
+            "padding-top": "100px",
+            "padding-bottom": "100px",
+          },
         },
       });
     }),

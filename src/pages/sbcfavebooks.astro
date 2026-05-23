@@ -1,0 +1,186 @@
+---
+import MainLayout from '../layouts/main-layout.astro'
+import FaveBooksTable from '../components/fave-books-table.tsx'
+import {
+  allBooks,
+  mostVotedAuthor,
+  mostVotedBooks,
+  storygraphChallengeUrl,
+} from '../data/favebooks'
+---
+
+<MainLayout title="Our Favourite Books | Silent Book Club Stourbridge">
+
+  <!-- Banner -->
+
+  <section
+    class="w-full bg-primary-slate h-[35vh] lg:h-[50vh] flex justify-center items-end"
+    aria-labelledby="page-title"
+  >
+    <div class="py-[30px] lg:py-[41px] px-6 sm:px-12 lg:px-16 flex flex-col justify-center items-center bg-white gap-2.5">
+      <h1
+        id="page-title"
+        class="text-[30px] leading-[1.25] lg:text-[50px] lg:leading-[1.24] font-dm capitalize text-primary-slate text-center"
+      >
+        Our favourite books
+      </h1>
+    </div>
+  </section>
+
+  <!-- Summary -->
+
+  <section
+    class="w-full page-section-y page-section-x mx-auto bg-white"
+    aria-labelledby="summary-heading"
+  >
+    <div class="page-container flex flex-col gap-8">
+      <h2
+        id="summary-heading"
+        class="text-[30px] text-center lg:text-left font-nunito tracking-wide capitalize leading-[1.25] md:leading-[1.25] md:text-[50px] text-primary-slate font-bold"
+      >
+        Summary
+      </h2>
+
+      <div class="flex flex-col gap-6 max-w-[900px]">
+        <p class="text-base md:text-[22px] tracking-tight font-mulish text-text-gray leading-[1.5] max-w-[65ch]">
+          In May 2026 we asked our community what their five favourite books were. Unlike <cite class="not-italic">The Guardian</cite>'s
+          recently published <a class="font-medium text-fg-brand hover:underline italic" href='https://www.theguardian.com/books/ng-interactive/2026/may/12/the-100-best-novels-of-all-time'>100 best novels</a>, this isn't necessarily about literary greatness. It's about the
+          books we love, that bring us joy, that we recommend most often or return to time and again.
+        </p>
+        <p class="text-base md:text-[22px] tracking-tight font-mulish text-text-gray leading-[1.5] max-w-[65ch]">
+          Over 5 days we received 38 responses, which reflect the diversity in our community. Our favourites
+          span over 200 years of writing and a full spectrum of genres.
+        </p>
+      </div>
+
+      <div>
+        <h3
+          id="summary-stats-heading"
+          class="text-base md:text-[22px] font-nunito font-bold text-primary-slate leading-[1.5] mb-3"
+        >
+          Our list contains
+        </h3>
+        <ul
+          class="list-disc pl-6 flex flex-col gap-3 text-base md:text-[22px] font-mulish text-text-gray leading-[1.5]"
+          aria-labelledby="summary-stats-heading"
+        >
+          <li>151 unique books or series</li>
+          <li>22 books or series with multiple votes</li>
+          <li>133 unique authors (54% female, 46% male)</li>
+          <li>32 authors with multiple votes</li>
+          <li>10 books also appear on <cite class="not-italic">The Guardian</cite>'s 100 best novels list</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Most voted -->
+
+  <section
+    class="w-full page-section-y page-section-x mx-auto bg-primary-slate"
+    aria-labelledby="most-voted-heading"
+  >
+    <h2 id="most-voted-heading" class="sr-only">Most voted</h2>
+    <div class="page-container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      <div class="flex flex-col gap-4" aria-labelledby="top-author-heading">
+        <h3
+          id="top-author-heading"
+          class="text-[30px] font-nunito tracking-wide capitalize leading-[1.25] md:leading-[1.25] md:text-[40px] text-white font-bold"
+        >
+          Authors with most votes
+        </h3>
+        <p class="text-base md:text-[28px] font-mulish text-white font-semibold leading-[1.5]">
+          1 J.R.R Tolkien
+        </p>
+        <p class="text-base md:text-[28px] font-mulish text-white font-semibold leading-[1.5]">
+          2 Sarah J Maas
+        </p>
+        <p class="text-base md:text-[28px] font-mulish text-white font-semibold leading-[1.5]">
+          3 Jane Austen
+        </p>
+          <ul class="text-base md:text-[28px] font-mulish text-white font-semibold leading-[1.5]">
+            <li>=4 Terry Pratchett</li>
+            <li>=4 Taylor Jenkins Reid</li>
+            <li>=4 Stephanie Meyer</li>
+            <li>=4 J.K. Rowling</li>
+            <li>=4 George Orwell</li>
+            <li>=4 Freida McFadden</li>
+            <li>=4 David Nicholls</li>
+          </ul>
+      </div>
+      <div class="flex flex-col gap-4" aria-labelledby="top-books-heading">
+        <h3
+          id="top-books-heading"
+          class="text-[30px] font-nunito tracking-wide capitalize leading-[1.25] md:leading-[1.25] md:text-[40px] text-white font-bold"
+        >
+          Most voted for books
+        </h3>
+        <ul
+          class="list-none pl-0 flex flex-col gap-2 text-base md:text-[20px] font-mulish text-white leading-[1.5]"
+          aria-labelledby="top-books-heading"
+        >
+          {
+            mostVotedBooks.map((book) => (
+              <li>
+                <span class="font-semibold">{book.rank}</span>{' '}
+                {book.title}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full list -->
+
+  <section
+    class="w-full page-section-y page-section-x mx-auto bg-white"
+    aria-labelledby="full-list-heading"
+    aria-describedby="full-list-intro"
+  >
+    <div class="page-container flex flex-col gap-8">
+      <h2
+        id="full-list-heading"
+        class="text-[30px] text-center lg:text-left font-nunito tracking-wide capitalize leading-[1.25] md:leading-[1.25] md:text-[50px] text-primary-slate font-bold"
+      >
+        The full list
+      </h2>
+
+      <div id="full-list-intro" class="flex flex-col gap-6 max-w-[65ch]">
+        <p
+          id="full-list-sources"
+          class="text-base md:text-[22px] tracking-tight font-mulish text-text-gray leading-[1.5]"
+        >
+          Genres and first published dates are taken from the <cite class="not-italic">Storygraph</cite> listing for the book. Where a vote
+          was given for an individual book in a series, it is listed in brackets.
+        </p>
+        <p
+          id="full-list-storygraph"
+          class="text-base md:text-[22px] tracking-tight font-mulish text-text-gray leading-[1.5]"
+        >
+          The full list is also available as a challenge on <cite class="not-italic">Storygraph</cite>
+          {storygraphChallengeUrl ? (
+            <>
+              {' '}—{' '}
+              <a
+                href={storygraphChallengeUrl}
+                class="text-primary-slate underline underline-offset-2 hover:text-text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-slate focus-visible:ring-offset-2 rounded-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view the Storygraph challenge
+                <span class="sr-only"> (opens in new tab)</span>
+              </a>.
+            </>
+          ) : (
+            <span class="text-text-gray"> (Storygraph challenge link coming soon)</span>
+          )}
+        </p>
+      </div>
+
+      <FaveBooksTable client:load books={allBooks} describedBy="full-list-intro" />
+    </div>
+  </section>
+
+</MainLayout>
