@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const navItems = [
   { item: "About Us", link: "/about" },
   { item: "About Silent Book Club", link: "/aboutsbc" },
-  // { item: "SBC Fave Books", link: "/sbcfavebooks" },
+  { item: "SBC Fave Books", link: "/sbcfavebooks" },
 ];
 
 const navLinkClass =
