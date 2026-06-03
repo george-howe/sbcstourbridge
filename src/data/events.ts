@@ -104,7 +104,7 @@ export const upcomingEvents: UpcomingEvent[] = [
     announced: true,
     img: drEamers.img,
     location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 25th May - 6.30pm-8.30pm",
+    date: "Thurs 25th June - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator",
     position: "left",
     alt: "Dr Eamers' bar exterior",
