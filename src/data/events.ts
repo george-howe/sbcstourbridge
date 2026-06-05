@@ -84,15 +84,6 @@ export const nextEventRSVPLink =
 export const upcomingEvents: UpcomingEvent[] = [
   // {
   //   announced: true,
-  //   img: hopvault.img,
-  //   location: "The Hop Vault",
-  //   date: "Tues 2nd June - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/june-silent-book-club-the-hop-vault-tickets-1989007334480?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Hop Vault exterior",
-  // },
-  // {
-  //   announced: true,
   //   img: waggon.img,
   //   location: "The Waggon and Horses, Worcester St",
   //   date: "Tues 9th June - 6.30pm-8.30pm",
@@ -110,12 +101,21 @@ export const upcomingEvents: UpcomingEvent[] = [
     alt: "Dr Eamers' bar exterior",
   },
   {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Tues 7th July - Subject to change",
-    link: "",
+    announced: true,
+    img: hopvault.img,
+    location: "The Hop Vault",
+    date: "Tues 7th July - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "The Hop Vault exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Tues 7th July - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
 ];
