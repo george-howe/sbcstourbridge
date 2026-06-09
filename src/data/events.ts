@@ -44,13 +44,12 @@ export const sugarLoaf: EventDetails = {
 };
 
 export const drEamers: EventDetails = {
-  summary:
-    "Come celebrate our 2nd birthday with us at Dr Eamers' Distillery Bar!",
-    // summary:
-    // "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
+
+    summary:
+    "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
   img: "/dreamers.jpg",
   alt: "Dr Eamers entrance",
-  dateTime: "Thursday 21st May - 6.30pm - 8.30pm",
+  dateTime: "Thursday 25th June - 6.30pm - 8.30pm",
 };
 
 export const hopvault: EventDetails = {
@@ -76,10 +75,10 @@ export const waggon: EventDetails = {
   dateTime: "Tues 9th June - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = waggon;
+export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/june-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1989899207095?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   // {
@@ -91,31 +90,31 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "The Waggons and Horses exterior",
   // },
-    {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 25th June - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator",
-    position: "left",
-    alt: "Dr Eamers' bar exterior",
-  },
+  //   {
+  //   announced: true,
+  //   img: drEamers.img,
+  //   location: "Dr Eamers' Distillery Bar",
+  //   date: "Thurs 25th June - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "Dr Eamers' bar exterior",
+  // },
   {
     announced: true,
     img: hopvault.img,
     location: "The Hop Vault",
     date: "Tues 7th July - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Hop Vault exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Tues 7th July - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Tues 14th July - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
+  },
 ];
