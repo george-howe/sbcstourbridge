@@ -81,15 +81,7 @@ export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  // {
-  //   announced: true,
-  //   img: waggon.img,
-  //   location: "The Waggon and Horses, Worcester St",
-  //   date: "Tues 9th June - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/june-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1989899207095?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Waggons and Horses exterior",
-  // },
+  
   //   {
   //   announced: true,
   //   img: drEamers.img,
@@ -109,12 +101,21 @@ export const upcomingEvents: UpcomingEvent[] = [
     alt: "The Hop Vault exterior",
   },
   {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Tues 14th July - Subject to change",
-    link: "",
+    announced: true,
+    img: waggon.img,
+    location: "The Waggon and Horses, Worcester St",
+    date: "Tues 14th July - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "The Waggons and Horses exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Tues 14th July - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
 ];
