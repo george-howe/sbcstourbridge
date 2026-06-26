@@ -57,7 +57,7 @@ export const hopvault: EventDetails = {
     "Come join us for a couple of drinks and an hour or two of reading at The Hop Vault!",
   img: "/hopvault.jpg",
   alt: "Hop Vault entrance",
-  dateTime: "Tues 2nd June - 6.30pm - 8.30pm ",
+  dateTime: "Tues 7th July - 6.30pm - 8.30pm ",
 };
 
 export const tbc: EventDetails = {
@@ -75,10 +75,10 @@ export const waggon: EventDetails = {
   dateTime: "Tues 9th June - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = drEamers;
+export const nextEvent = hopvault;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/june-silent-book-club-dr-eamers-distillery-bar-tickets-1990647443089?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   
@@ -91,31 +91,31 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "Dr Eamers' bar exterior",
   // },
-  {
-    announced: true,
-    img: hopvault.img,
-    location: "The Hop Vault",
-    date: "Tues 7th July - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Hop Vault exterior",
-  },
+  // {
+  //   announced: true,
+  //   img: hopvault.img,
+  //   location: "The Hop Vault",
+  //   date: "Tues 7th July - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Hop Vault exterior",
+  // },
   {
     announced: true,
     img: waggon.img,
     location: "The Waggon and Horses, Worcester St",
     date: "Tues 14th July - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Waggons and Horses exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Tues 14th July - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Thurs 30th July - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
+  },
 ];
