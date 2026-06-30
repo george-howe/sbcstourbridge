@@ -82,15 +82,7 @@ export const nextEventRSVPLink =
 
 export const upcomingEvents: UpcomingEvent[] = [
   
-    {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 30th June - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/july-silent-book-club-dr-eamers-distillery-bar-tickets-1992827167704?aff=oddtdtcreator",
-    position: "left",
-    alt: "Dr Eamers' bar exterior",
-  },
+  
   // {
   //   announced: true,
   //   img: hopvault.img,
@@ -108,6 +100,15 @@ export const upcomingEvents: UpcomingEvent[] = [
     link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
     position: "left",
     alt: "The Waggons and Horses exterior",
+  },
+    {
+    announced: true,
+    img: drEamers.img,
+    location: "Dr Eamers' Distillery Bar",
+    date: "Thurs 30th July - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/july-silent-book-club-dr-eamers-distillery-bar-tickets-1992827167704?aff=oddtdtcreator",
+    position: "right",
+    alt: "Dr Eamers' bar exterior",
   },
   // {
   //   announced: false,
