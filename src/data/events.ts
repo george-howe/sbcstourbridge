@@ -72,13 +72,13 @@ export const waggon: EventDetails = {
   summary: "Bring a book, grab a drink, and enjoy an hour of peaceful reading with fellow book lovers at The Waggon and Horses.",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
-  dateTime: "Tues 9th June - 6.30pm - 8.30pm",
+  dateTime: "Tues 21st July - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = hopvault;
+export const nextEvent = waggon;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   
@@ -92,31 +92,31 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "The Hop Vault exterior",
   // },
-  {
-    announced: true,
-    img: waggon.img,
-    location: "The Waggon and Horses, Worcester St",
-    date: "Tues 21st July - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Waggons and Horses exterior",
-  },
+  // {
+  //   announced: true,
+  //   img: waggon.img,
+  //   location: "The Waggon and Horses, Worcester St",
+  //   date: "Tues 21st July - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Waggons and Horses exterior",
+  // },
     {
     announced: true,
     img: drEamers.img,
     location: "Dr Eamers' Distillery Bar",
     date: "Thurs 30th July - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/july-silent-book-club-dr-eamers-distillery-bar-tickets-1992827167704?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "Dr Eamers' bar exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Thurs 30th July - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Tues 4th August - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
+  },
 ];
