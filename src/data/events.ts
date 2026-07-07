@@ -96,7 +96,7 @@ export const upcomingEvents: UpcomingEvent[] = [
     announced: true,
     img: waggon.img,
     location: "The Waggon and Horses, Worcester St",
-    date: "Tues 14th July - 6.30pm-8.30pm",
+    date: "Tues 21st July - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
     position: "left",
     alt: "The Waggons and Horses exterior",
