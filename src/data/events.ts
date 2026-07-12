@@ -81,17 +81,6 @@ export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  
-  
-  // {
-  //   announced: true,
-  //   img: hopvault.img,
-  //   location: "The Hop Vault",
-  //   date: "Tues 7th July - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/july-silent-book-club-the-hop-vault-tickets-1991201802192?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Hop Vault exterior",
-  // },
   // {
   //   announced: true,
   //   img: waggon.img,
@@ -111,12 +100,21 @@ export const upcomingEvents: UpcomingEvent[] = [
     alt: "Dr Eamers' bar exterior",
   },
   {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Tues 4th August - Subject to change",
-    link: "",
+    announced: true,
+    img: hopvault.img,
+    location: "The Hop Vault",
+    date: "Tues 4th August - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "The Hop Vault exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Tues 4th August - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
 ];
