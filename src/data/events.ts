@@ -49,7 +49,7 @@ export const drEamers: EventDetails = {
     "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
   img: "/dreamers.jpg",
   alt: "Dr Eamers entrance",
-  dateTime: "Thursday 25th June - 6.30pm - 8.30pm",
+  dateTime: "Thursday 30th July - 6.30pm - 8.30pm",
 };
 
 export const hopvault: EventDetails = {
