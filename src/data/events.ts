@@ -57,7 +57,7 @@ export const hopvault: EventDetails = {
     "Come join us for a couple of drinks and an hour or two of reading at The Hop Vault!",
   img: "/hopvault.jpg",
   alt: "Hop Vault entrance",
-  dateTime: "Tues 7th July - 6.30pm - 8.30pm ",
+  dateTime: "Tues 4th August - 6.30pm - 8.30pm ",
 };
 
 export const tbc: EventDetails = {
@@ -75,21 +75,13 @@ export const waggon: EventDetails = {
   dateTime: "Tues 21st July - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = drEamers;
+export const nextEvent = hopvault;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/july-silent-book-club-dr-eamers-distillery-bar-tickets-1992827167704?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  // {
-  //   announced: true,
-  //   img: waggon.img,
-  //   location: "The Waggon and Horses, Worcester St",
-  //   date: "Tues 21st July - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/july-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1991701412540?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Waggons and Horses exterior",
-  // },
+  
   //   {
   //   announced: true,
   //   img: drEamers.img,
@@ -109,21 +101,31 @@ export const upcomingEvents: UpcomingEvent[] = [
     alt: "The Hop Vault exterior",
   },
   {
+    announced: true,
+    img: waggon.img,
+    location: "The Waggon and Horses, Worcester St",
+    date: "Tues 11th August - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator",
+    position: "right",
+    alt: "The Waggons and Horses exterior",
+  },
+  {
     announced: false,
     img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Tues 11th August - Subject to change",
-    link: "",
-    position: "right",
+    location: "Hawbush Community Gardens",
+    date: "Tues 18th August - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator",
+    position: "left",
     alt: "Books arranged on shelves in a bookshop",
   },
   {
     announced: false,
     img: "/bookshop.jpg",
     location: "TBC",
-    date: "Tues 18th August",
+    date: "Thurs 27th August - Subject to change",
     link: "",
-    position: "left",
+    position: "right",
     alt: "Books arranged on shelves in a bookshop",
   },
+  
 ];
