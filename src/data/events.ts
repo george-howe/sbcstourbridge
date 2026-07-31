@@ -81,16 +81,6 @@ export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  
-  //   {
-  //   announced: true,
-  //   img: drEamers.img,
-  //   location: "Dr Eamers' Distillery Bar",
-  //   date: "Thurs 30th July - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/july-silent-book-club-dr-eamers-distillery-bar-tickets-1992827167704?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "Dr Eamers' bar exterior",
-  // },
   {
     announced: true,
     img: hopvault.img,
@@ -118,14 +108,23 @@ export const upcomingEvents: UpcomingEvent[] = [
     position: "left",
     alt: "Books arranged on shelves in a bookshop",
   },
-  {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Thurs 27th August - Subject to change",
-    link: "",
+     {
+    announced: true,
+    img: drEamers.img,
+    location: "Dr Eamers' Distillery Bar",
+    date: "Thurs 27th August - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/august-silent-book-club-dr-eamers-distillery-bar-tickets-1996239858153?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "Dr Eamers' bar exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Thurs 27th August - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
   
 ];
