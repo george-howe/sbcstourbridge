@@ -72,33 +72,33 @@ export const waggon: EventDetails = {
   summary: "Bring a book, grab a drink, and enjoy an hour of peaceful reading with fellow book lovers at The Waggon and Horses.",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
-  dateTime: "Tues 21st July - 6.30pm - 8.30pm",
+  dateTime: "Tues 11th August - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = hopvault;
+export const nextEvent = waggon;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  {
-    announced: true,
-    img: hopvault.img,
-    location: "The Hop Vault",
-    date: "Tues 4th August - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Hop Vault exterior",
-  },
-  {
-    announced: true,
-    img: waggon.img,
-    location: "The Waggon and Horses, Worcester St",
-    date: "Tues 11th August - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator",
-    position: "right",
-    alt: "The Waggons and Horses exterior",
-  },
+  // {
+  //   announced: true,
+  //   img: hopvault.img,
+  //   location: "The Hop Vault",
+  //   date: "Tues 4th August - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Hop Vault exterior",
+  // },
+  // {
+  //   announced: true,
+  //   img: waggon.img,
+  //   location: "The Waggon and Horses, Worcester St",
+  //   date: "Tues 11th August - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator",
+  //   position: "right",
+  //   alt: "The Waggons and Horses exterior",
+  // },
   {
     announced: false,
     img: "/bookshop.jpg",
@@ -117,14 +117,14 @@ export const upcomingEvents: UpcomingEvent[] = [
     position: "right",
     alt: "Dr Eamers' bar exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Thurs 27th August - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Thurs 1st Sept - Subject to change",
+    link: "",
+    position: "left",
+    alt: "Books arranged on shelves in a bookshop",
+  },
   
 ];
