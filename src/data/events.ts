@@ -35,12 +35,12 @@ export const summaries: SummaryItem[] = [
   },
 ];
 
-export const sugarLoaf: EventDetails = {
+export const hawbush: EventDetails = {
   summary:
-    "Why not spend an hour or two with a good book surrounded by nature over at Roots Allotments Sugar Loaf Fields!",
-  img: "/sugarloaf.jpg",
+    "Why not spend an hour or two with a good book surrounded by nature over at Hawbush Community Gardens!",
+  img: "/bookshop.jpg",
   alt: "Allotment field with teepee",
-  dateTime: "Tuesday 16th September 6.30pm - 8.30pm",
+  dateTime: "Tuesday 18th August 6.30pm - 8.30pm",
 };
 
 export const drEamers: EventDetails = {
@@ -75,21 +75,13 @@ export const waggon: EventDetails = {
   dateTime: "Tues 11th August - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = waggon;
+export const nextEvent = hawbush;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  // {
-  //   announced: true,
-  //   img: hopvault.img,
-  //   location: "The Hop Vault",
-  //   date: "Tues 4th August - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/august-silent-book-club-the-hop-vault-tickets-1993767293646?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Hop Vault exterior",
-  // },
+  
   // {
   //   announced: true,
   //   img: waggon.img,
@@ -99,29 +91,38 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "right",
   //   alt: "The Waggons and Horses exterior",
   // },
-  {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "Hawbush Community Gardens",
-    date: "Tues 18th August - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator",
-    position: "left",
-    alt: "Books arranged on shelves in a bookshop",
-  },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "Hawbush Community Gardens",
+  //   date: "Tues 18th August - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
      {
     announced: true,
     img: drEamers.img,
     location: "Dr Eamers' Distillery Bar",
     date: "Thurs 27th August - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/august-silent-book-club-dr-eamers-distillery-bar-tickets-1996239858153?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "Dr Eamers' bar exterior",
+  },
+  {
+    announced: true,
+    img: hopvault.img,
+    location: "The Hop Vault",
+    date: "Tues 1st September - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator",
+    position: "left",
+    alt: "The Hop Vault exterior",
   },
   {
     announced: false,
     img: "/bookshop.jpg",
     location: "TBC",
-    date: "Thurs 1st Sept - Subject to change",
+    date: "Thurs 8th Sept - Subject to change",
     link: "",
     position: "left",
     alt: "Books arranged on shelves in a bookshop",
