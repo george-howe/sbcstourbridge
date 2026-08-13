@@ -49,7 +49,7 @@ export const drEamers: EventDetails = {
     "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
   img: "/dreamers.jpg",
   alt: "Dr Eamers entrance",
-  dateTime: "Thursday 30th July - 6.30pm - 8.30pm",
+  dateTime: "Thursday 27th August - 6.30pm - 8.30pm",
 };
 
 export const hopvault: EventDetails = {
@@ -57,7 +57,7 @@ export const hopvault: EventDetails = {
     "Come join us for a couple of drinks and an hour or two of reading at The Hop Vault!",
   img: "/hopvault.jpg",
   alt: "Hop Vault entrance",
-  dateTime: "Tues 4th August - 6.30pm - 8.30pm ",
+  dateTime: "Tues 1st September - 6.30pm - 8.30pm ",
 };
 
 export const tbc: EventDetails = {
@@ -72,7 +72,7 @@ export const waggon: EventDetails = {
   summary: "Bring a book, grab a drink, and enjoy an hour of peaceful reading with fellow book lovers at The Waggon and Horses.",
   img: "/Waggon.jpg",
   alt: "The Waggon and Horses exterior",
-  dateTime: "Tues 11th August - 6.30pm - 8.30pm",
+  dateTime: "Tues 8th September - 6.30pm - 8.30pm",
 };
 
 export const nextEvent = hawbush;
@@ -81,25 +81,6 @@ export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  
-  // {
-  //   announced: true,
-  //   img: waggon.img,
-  //   location: "The Waggon and Horses, Worcester St",
-  //   date: "Tues 11th August - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/august-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1995287529713?aff=oddtdtcreator",
-  //   position: "right",
-  //   alt: "The Waggons and Horses exterior",
-  // },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "Hawbush Community Gardens",
-  //   date: "Tues 18th August - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/august-silent-book-club-outdoors-edition-hawbush-community-gardens-tickets-1994983470263?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
      {
     announced: true,
     img: drEamers.img,
@@ -115,17 +96,26 @@ export const upcomingEvents: UpcomingEvent[] = [
     location: "The Hop Vault",
     date: "Tues 1st September - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator",
-    position: "left",
+    position: "right",
     alt: "The Hop Vault exterior",
   },
   {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Thurs 8th Sept - Subject to change",
-    link: "",
+    announced: true,
+    img: waggon.img,
+    location: "The Waggon and Horses, Worcester St",
+    date: "Tues 8th September - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator",
     position: "left",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "The Waggons and Horses exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Thurs 8th Sept - Subject to change",
+  //   link: "",
+  //   position: "left",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
   
 ];
