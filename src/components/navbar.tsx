@@ -6,6 +6,7 @@ const navItems = [
   { item: "About Us", link: "/about" },
   { item: "About Silent Book Club", link: "/aboutsbc" },
   { item: "SBC Fave Books", link: "/sbcfavebooks" },
+  { item: "Community Guidelines", link: "/communityguidelines" },
 ];
 
 const navLinkClass =
