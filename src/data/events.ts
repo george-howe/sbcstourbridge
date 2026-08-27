@@ -75,39 +75,30 @@ export const waggon: EventDetails = {
   dateTime: "Tues 8th September - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = drEamers;
+export const nextEvent = hopvault;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/august-silent-book-club-dr-eamers-distillery-bar-tickets-1996239858153?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  {
-    announced: true,
-    img: hopvault.img,
-    location: "The Hop Vault",
-    date: "Tues 1st September - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Hop Vault exterior",
-  },
   {
     announced: true,
     img: waggon.img,
     location: "The Waggon and Horses, Worcester St",
     date: "Tues 8th September - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Waggons and Horses exterior",
   },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Thurs 8th Sept - Subject to change",
-  //   link: "",
-  //   position: "left",
-  //   alt: "Books arranged on shelves in a bookshop",
-  // },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Thurs 24th Sept - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
+  },
     //    {
   //   announced: true,
   //   img: drEamers.img,
@@ -116,6 +107,15 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   link: "https://www.eventbrite.com/e/august-silent-book-club-dr-eamers-distillery-bar-tickets-1996239858153?aff=oddtdtcreator",
   //   position: "left",
   //   alt: "Dr Eamers' bar exterior",
+  // },
+ // {
+  //   announced: true,
+  //   img: hopvault.img,
+  //   location: "The Hop Vault",
+  //   date: "Tues 1st September - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Hop Vault exterior",
   // },
   
 ];
