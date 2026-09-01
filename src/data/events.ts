@@ -75,29 +75,20 @@ export const waggon: EventDetails = {
   dateTime: "Tues 8th September - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = hopvault;
+export const nextEvent = waggon;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  {
-    announced: true,
-    img: waggon.img,
-    location: "The Waggon and Horses, Worcester St",
-    date: "Tues 8th September - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Waggons and Horses exterior",
-  },
   // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Thurs 24th Sept - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
+  //   announced: true,
+  //   img: waggon.img,
+  //   location: "The Waggon and Horses, Worcester St",
+  //   date: "Tues 8th September - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "The Waggons and Horses exterior",
   // },
        {
     announced: true,
@@ -105,8 +96,17 @@ export const upcomingEvents: UpcomingEvent[] = [
     location: "Dr Eamers' Distillery Bar",
     date: "Thurs 24th September - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "Dr Eamers' bar exterior",
+  },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Tues 6th Oct - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
   },
  // {
   //   announced: true,
