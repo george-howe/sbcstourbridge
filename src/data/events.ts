@@ -57,7 +57,7 @@ export const hopvault: EventDetails = {
     "Come join us for a couple of drinks and an hour or two of reading at The Hop Vault!",
   img: "/hopvault.jpg",
   alt: "Hop Vault entrance",
-  dateTime: "Tues 1st September - 6.30pm - 8.30pm ",
+  dateTime: "Tues 6th October - 6.30pm - 8.30pm ",
 };
 
 export const tbc: EventDetails = {
@@ -99,23 +99,23 @@ export const upcomingEvents: UpcomingEvent[] = [
     position: "left",
     alt: "Dr Eamers' bar exterior",
   },
-  {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Tues 6th Oct - Subject to change",
-    link: "",
-    position: "right",
-    alt: "Books arranged on shelves in a bookshop",
-  },
- // {
-  //   announced: true,
-  //   img: hopvault.img,
-  //   location: "The Hop Vault",
-  //   date: "Tues 1st September - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/september-silent-book-club-the-hop-vault-tickets-1997329653761?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "The Hop Vault exterior",
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Tues 6th Oct - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
   // },
+ {
+    announced: true,
+    img: hopvault.img,
+    location: "The Hop Vault",
+    date: "Tues 6th October - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator",
+    position: "right",
+    alt: "The Hop Vault exterior",
+  },
   
 ];
