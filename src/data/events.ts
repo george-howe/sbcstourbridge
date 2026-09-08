@@ -75,10 +75,10 @@ export const waggon: EventDetails = {
   dateTime: "Tues 8th September - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = waggon;
+export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/september-silent-book-club-the-waggon-and-horses-worcester-st-tickets-1997879391040?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   // {
@@ -90,32 +90,33 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "The Waggons and Horses exterior",
   // },
-       {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 24th September - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator",
-    position: "left",
-    alt: "Dr Eamers' bar exterior",
-  },
-  // {
-  //   announced: false,
-  //   img: "/bookshop.jpg",
-  //   location: "TBC",
-  //   date: "Tues 6th Oct - Subject to change",
-  //   link: "",
-  //   position: "right",
-  //   alt: "Books arranged on shelves in a bookshop",
+  //      {
+  //   announced: true,
+  //   img: drEamers.img,
+  //   location: "Dr Eamers' Distillery Bar",
+  //   date: "Thurs 24th September - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "Dr Eamers' bar exterior",
   // },
+  
  {
     announced: true,
     img: hopvault.img,
     location: "The Hop Vault",
     date: "Tues 6th October - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Hop Vault exterior",
+  },
+  {
+    announced: false,
+    img: "/bookshop.jpg",
+    location: "TBC",
+    date: "Tues 13th Oct - Subject to change",
+    link: "",
+    position: "right",
+    alt: "Books arranged on shelves in a bookshop",
   },
   
 ];
