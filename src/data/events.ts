@@ -75,10 +75,10 @@ export const waggon: EventDetails = {
   dateTime: "Tues 13th October - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = drEamers;
+export const nextEvent = hopvault;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   //      {
@@ -91,15 +91,15 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   alt: "Dr Eamers' bar exterior",
   // },
   
- {
-    announced: true,
-    img: hopvault.img,
-    location: "The Hop Vault",
-    date: "Tues 6th October - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator",
-    position: "left",
-    alt: "The Hop Vault exterior",
-  },
+//  {
+//     announced: true,
+//     img: hopvault.img,
+//     location: "The Hop Vault",
+//     date: "Tues 6th October - 6.30pm-8.30pm",
+//     link: "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator",
+//     position: "left",
+//     alt: "The Hop Vault exterior",
+//   },
   {
     announced: true,
     img: waggon.img,
@@ -113,7 +113,7 @@ export const upcomingEvents: UpcomingEvent[] = [
     announced: false,
     img: "/bookshop.jpg",
     location: "TBC",
-    date: "Tues 13th Oct - Subject to change",
+    date: "Thurs 29th Oct - Subject to change",
     link: "",
     position: "right",
     alt: "Books arranged on shelves in a bookshop",
