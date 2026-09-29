@@ -81,15 +81,7 @@ export const nextEventRSVPLink =
   "https://www.eventbrite.com/e/october-silent-book-club-the-hop-vault-tickets-2000008963649?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
-  //      {
-  //   announced: true,
-  //   img: drEamers.img,
-  //   location: "Dr Eamers' Distillery Bar",
-  //   date: "Thurs 24th September - 6.30pm-8.30pm",
-  //   link: "https://www.eventbrite.com/e/september-silent-book-club-dr-eamers-distillery-bar-tickets-1999084578789?aff=oddtdtcreator",
-  //   position: "left",
-  //   alt: "Dr Eamers' bar exterior",
-  // },
+  
   
 //  {
 //     announced: true,
@@ -106,17 +98,26 @@ export const upcomingEvents: UpcomingEvent[] = [
     location: "The Waggon and Horses, Worcester St",
     date: "Tues 13th October - 6.30pm-8.30pm",
     link: "https://www.eventbrite.com/e/october-silent-book-club-the-waggon-and-horses-worcester-st-tickets-2001364822058?aff=oddtdtcreator",
-    position: "right",
+    position: "left",
     alt: "The Waggons and Horses exterior",
   },
-  {
-    announced: false,
-    img: "/bookshop.jpg",
-    location: "TBC",
-    date: "Thurs 29th Oct - Subject to change",
-    link: "",
+       {
+    announced: true,
+    img: drEamers.img,
+    location: "Dr Eamers' Distillery Bar",
+    date: "Thurs 24th September - 6.30pm-8.30pm",
+    link: "https://www.eventbrite.com/e/october-silent-book-club-dr-eamers-distillery-bar-tickets-2002425773392?aff=oddtdtcreator",
     position: "right",
-    alt: "Books arranged on shelves in a bookshop",
+    alt: "Dr Eamers' bar exterior",
   },
+  // {
+  //   announced: false,
+  //   img: "/bookshop.jpg",
+  //   location: "TBC",
+  //   date: "Thurs 29th Oct - Subject to change",
+  //   link: "",
+  //   position: "right",
+  //   alt: "Books arranged on shelves in a bookshop",
+  // },
   
 ];
