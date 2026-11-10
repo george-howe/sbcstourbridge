@@ -49,7 +49,7 @@ export const drEamers: EventDetails = {
     "Come join us for cocktails and an hour or two reading at Dr Eamers' Distillery Bar!",
   img: "/dreamers.jpg",
   alt: "Dr Eamers entrance",
-  dateTime: "Thursday 24th September - 6.30pm - 8.30pm",
+  dateTime: "Thursday 26th November - 6.30pm - 8.30pm",
 };
 
 export const hopvault: EventDetails = {
@@ -62,7 +62,7 @@ export const hopvault: EventDetails = {
 
 export const tbc: EventDetails = {
   summary:
-    "That's it for our in-person meets this year! We'll be spending December resting, working on our TBRs, and making plans for 2026! Keep your eyes peeled for updates...",
+    "That's it for our in-person meets this year! We'll be spending December resting, working on our TBRs, and making plans for 2027! Keep your eyes peeled for updates...",
   img: "/xmas.jpg",
   alt: "A book surrounded by Christmas lights",
   dateTime: "",
@@ -75,10 +75,10 @@ export const waggon: EventDetails = {
   dateTime: "Tues 10th November - 6.30pm - 8.30pm",
 };
 
-export const nextEvent = waggon;
+export const nextEvent = drEamers;
 
 export const nextEventRSVPLink =
-  "https://www.eventbrite.com/e/november-silent-book-club-the-waggon-and-horses-worcester-st-tickets-2004113611762?aff=oddtdtcreator";
+  "https://www.eventbrite.com/e/november-silent-book-club-dr-eamers-distillery-bar-tickets-2004184361376?aff=oddtdtcreator";
 
 export const upcomingEvents: UpcomingEvent[] = [
   
@@ -101,15 +101,15 @@ export const upcomingEvents: UpcomingEvent[] = [
   //   position: "left",
   //   alt: "The Waggons and Horses exterior",
   // },
-       {
-    announced: true,
-    img: drEamers.img,
-    location: "Dr Eamers' Distillery Bar",
-    date: "Thurs 26th November - 6.30pm-8.30pm",
-    link: "https://www.eventbrite.com/e/november-silent-book-club-dr-eamers-distillery-bar-tickets-2004184361376?aff=oddtdtcreator",
-    position: "left",
-    alt: "Dr Eamers' bar exterior",
-  },
+  //      {
+  //   announced: true,
+  //   img: drEamers.img,
+  //   location: "Dr Eamers' Distillery Bar",
+  //   date: "Thurs 26th November - 6.30pm-8.30pm",
+  //   link: "https://www.eventbrite.com/e/november-silent-book-club-dr-eamers-distillery-bar-tickets-2004184361376?aff=oddtdtcreator",
+  //   position: "left",
+  //   alt: "Dr Eamers' bar exterior",
+  // },
   // {
   //   announced: false,
   //   img: "/bookshop.jpg",
